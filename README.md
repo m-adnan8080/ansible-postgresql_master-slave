@@ -1,6 +1,8 @@
 # Vagrant and ansible to setup PostgreSQL 12 Master Slave replication on Ubuntu 20.04
 
-This repo will create PostgreSQL single Master and Two Slave Cluster setup using Vagrant to create VM on virtualbox. Ansible will perform the initial installation and also the configuration of Master-Slave replication configuration. If the PostgreSQL Master goes down then change the ansible hosts file i.e, move any server from db_slave group to db_master group and re-run the ansible command to promote slave as master. 
+This repo will create PostgreSQL single Master and Two Slave Cluster setup using Vagrant.
+
+Ansible will perform the initial installation and also the configuration of Master-Slave replication configuration. If the PostgreSQL Master goes down then change the ansible hosts file i.e, move any server from db_slave group to db_master group and re-run the ansible command to promote slave as master. 
 
 Similarly new slave can be added later on by adding server to db_slave group in hosts file and run ansible playbook to perform the installation and configuration of slave server.
 
