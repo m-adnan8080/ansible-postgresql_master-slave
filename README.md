@@ -4,7 +4,7 @@ This repo will create PostgreSQL single Master and Two Slave Cluster setup using
 
 Similarly new slave can be added later on by adding server to db_slave group in hosts file and run ansible playbook to perform the installation and configuration of slave server.
 
-## Prerequisites
+# Prerequisites
 Below software must be installed on the machine to run this automation
 1. Oracle VirtualBox
 2. Vagrant
@@ -13,7 +13,7 @@ Below software must be installed on the machine to run this automation
 
 [OPTIONAL] You can also download the Ubuntu 20.04 vagrant box with command `vagrant box add ubuntu/focal64`. If this step skipped then `vagrant up` command will first download vagrant box then create VM(s) from it.
 
-## Usage
+# Usage
 First clone the repo 
 
 `git clone https://github.com/m-adnan8080/ansible-postgresql_master-slave.git`
